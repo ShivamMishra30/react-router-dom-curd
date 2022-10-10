@@ -32,7 +32,10 @@ export default function Root() {
         <Suspense fallback={<p>Loading...</p>}>
           <Await
             resolve={contacts}
-            errorElement={<p>Error loading blog posts.</p>}
+            errorElement={<ul>
+              <li>Check is api running. ref: Readme</li>
+              <li>you suck at code</li>
+            </ul>}
           >
             {(loadedContacts) => <SideNav loadedContacts={loadedContacts} />}
           </Await>
