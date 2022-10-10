@@ -1,0 +1,12 @@
+{
+  "description": "The file is generated using https://rowadz.github.io/pollux/",
+  "scripts": {
+    "dev": "json-server --watch db.json -r routes.json"
+  },
+  "author": "Rowadz",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.2",
+    "json-server-auth": "^2.0.2"
+  }
+}
