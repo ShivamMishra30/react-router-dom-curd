@@ -24,7 +24,7 @@ export default function Root() {
       form.value = ""
       navigate("/");
     });
-
+    return form.removeEventListener('focusout')
   }, [q]);
 
   const searching =
