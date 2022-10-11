@@ -1,6 +1,10 @@
 import { sleep } from "./sleep";
 
-const getContacts = async () => {
+const getContacts = async (q) => {
+  if (q.length) {
+    const data = await fetch(`http://localhost:3000/data${q}`);
+    return data.json();
+  }
   await sleep(2000);
   const data = await fetch("http://localhost:3000/data");
   if (!data.ok) {
